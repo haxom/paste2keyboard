@@ -1,4 +1,11 @@
 paste2keyboard
 ==============
 
-## ToDo :)
+This program sends all unicode chars from a file to a virtual keyboard.
+This can be usefull for fuzzing/trying to inject heavy user application.
+
+The viirtualkeyboard uses the SendInput[1] function to simulate the keyboard events.
+Only hardware, not virtual, key codes are used.
+
+SendInput function: http://msdn.microsoft.com/en-us/library/windows/desktop/ms646310
+Virtual-Key Codes: http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx
